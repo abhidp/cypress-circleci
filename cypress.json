@@ -1,3 +1,5 @@
 {
-  "baseUrl":"https://cafetownsend-angular-rails.herokuapp.com"
+  "baseUrl":"https://cafetownsend-angular-rails.herokuapp.com",
+  "video": false,
+  "trashAssetsBeforeRuns": true
 }
