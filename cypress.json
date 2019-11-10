@@ -1,6 +1,6 @@
 {
   "baseUrl": "https://cafetownsend-angular-rails.herokuapp.com",
-  "video": false,
+  "video": true,
   "trashAssetsBeforeRuns": true,
   "projectId": "kcuq6p"
 }
