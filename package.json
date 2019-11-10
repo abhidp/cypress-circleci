@@ -1,0 +1,15 @@
+{
+  "name": "cypress-circleci",
+  "version": "1.0.0",
+  "description": "E2E test automation using Cypress",
+  "scripts": {
+    "cypress": "./node_modules/.bin/cypress open",
+    "test": "./node_modules/.bin/cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^3.6.1"
+  }
+}
