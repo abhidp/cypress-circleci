@@ -1,6 +1,10 @@
 version: 2.1
 orbs:
   cypress: cypress-io/cypress@1
+general:
+  branches:
+    only:
+     - reporter  
 workflows:
   build:
     jobs:
@@ -8,6 +12,11 @@ workflows:
       - cypress/run:
           requires:
             - cypress/install
+          no-workspace: true
+          command: 'npm run report'
+          post-steps:
+            - store_test_results:
+                path: cypress/results  
           record: true        # record results on Cypress Dashboard
           parallel: true      # split all specs across machines
           parallelism: 4      # use 4 CircleCI machines to finish quickly

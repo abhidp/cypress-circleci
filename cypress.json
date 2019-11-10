@@ -2,5 +2,10 @@
   "baseUrl": "https://cafetownsend-angular-rails.herokuapp.com",
   "video": true,
   "trashAssetsBeforeRuns": true,
-  "projectId": "kcuq6p"
+  "projectId": "kcuq6p",
+  "reporter": "junit",
+  "reporterOptions": {
+    "mochaFile": "results/my-test-output-[hash].xml",
+    "toConsole": true
+  }
 }

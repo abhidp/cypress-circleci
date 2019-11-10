@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.859" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2019-11-10T13:21:19" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Delete Employee Spec" timestamp="2019-11-10T13:21:19" tests="1" failures="0" time="7.859">
+    <testcase name="Delete Employee Spec Delete Employee record and verify Emp does not exist anymore in the system" time="7.859" classname="Delete Employee record and verify Emp does not exist anymore in the system">
+    </testcase>
+  </testsuite>
+</testsuites>
