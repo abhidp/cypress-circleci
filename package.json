@@ -4,12 +4,23 @@
   "description": "E2E test automation using Cypress",
   "scripts": {
     "cypress": "./node_modules/.bin/cypress open",
-    "test": "./node_modules/.bin/cypress run"
+    "test": "./node_modules/.bin/cypress run",
+    "delete:reports": "rm cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "report": "./node_modules/.bin/cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^3.6.1"
+  },
+  "devDependencies": {
+    "cypress-multi-reporters": "^1.2.3",
+    "mocha": "^6.2.2",
+    "mocha-junit-reporter": "^1.23.1",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^2.0.1",
+    "mochawesome-report-generator": "^4.0.1"
   }
 }
