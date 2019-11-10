@@ -1,12 +1,6 @@
 {
-  "baseUrl":"https://cafetownsend-angular-rails.herokuapp.com",
-  "video": false,
+  "baseUrl": "https://cafetownsend-angular-rails.herokuapp.com",
+  "video": true,
   "trashAssetsBeforeRuns": true,
-  "reporter": "mochawesome",
-  "reporterOptions": {
-    "reportDir": "cypress/results",
-    "overwrite": false,
-    "html": false,
-    "json": true
-  }
+  "projectId": "kcuq6p"
 }
