@@ -2,5 +2,9 @@
   "baseUrl": "https://cafetownsend-angular-rails.herokuapp.com",
   "video": true,
   "trashAssetsBeforeRuns": true,
-  "projectId": "kcuq6p"
+  "projectId": "kcuq6p",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+   "configFile": "reporter-config.json"
+  }
 }
