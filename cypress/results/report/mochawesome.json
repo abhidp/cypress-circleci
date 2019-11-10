@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2019-11-10T15:17:49.902Z",
-    "end": "2019-11-10T15:17:49.902Z",
-    "duration": 30830,
+    "start": "2019-11-10T15:23:40.074Z",
+    "end": "2019-11-10T15:23:40.074Z",
+    "duration": 32805,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "893f2e2d-0a0d-4384-b3ac-8cfc804bcf8b",
+      "uuid": "d692e78d-c1a3-4647-ab6c-ba6ba13d7b8b",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "25f61b41-eb9e-4ee5-97e6-2f730537fe99",
+          "uuid": "30645b0f-fbec-4b80-ba7c-e5caaadd1da3",
           "title": "Login Spec",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login with Correct Credentials",
               "fullTitle": "Login Spec Login with Correct Credentials",
               "timedOut": null,
-              "duration": 4500,
+              "duration": 4159,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy // action\n.get('[ng-model=\"user.name\"]').type(Cypress.env('username')).get('[ng-model=\"user.password\"]').type(Cypress.env('password')).get('#login-form').submit() // assertions\n.location('pathname').should('eq', '/employees').get('#greetings').should('be.visible').should('have.text', \"Hello \".concat(Cypress.env('username')));",
               "err": {},
-              "uuid": "d21d290c-98f6-41d9-84ec-396501ffbcef",
-              "parentUUID": "25f61b41-eb9e-4ee5-97e6-2f730537fe99",
+              "uuid": "61cc0432-27a5-41d0-99fc-9b1acbf89861",
+              "parentUUID": "30645b0f-fbec-4b80-ba7c-e5caaadd1da3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d21d290c-98f6-41d9-84ec-396501ffbcef"
+            "61cc0432-27a5-41d0-99fc-9b1acbf89861"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4500,
+          "duration": 4159,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "0ab4966e-0d25-4a19-9c2b-a5ff8feca366",
+      "uuid": "602297ee-a8e3-4149-83b2-f362621d55d9",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "74625f0e-acc9-4c5e-bb68-fee879db4984",
+          "uuid": "239752cf-7726-4027-9f95-e84a9be007e8",
           "title": "Create Employee Spec",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "Create New Employee and Verify it is Created",
               "fullTitle": "Create Employee Spec Create New Employee and Verify it is Created",
               "timedOut": null,
-              "duration": 7588,
+              "duration": 7782,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,20 +105,20 @@
               "context": null,
               "code": "var firstName = (0, _helper.randomString)(4);\nvar lastName = (0, _helper.randomString)(5);\nvar email = \"\".concat(firstName, \".\").concat(lastName, \"@cafetownsend.com\");\ncy // create Employee\n.get('#bAdd').click().get('[ng-model=\"selectedEmployee.firstName\"]').type(firstName).get('[ng-model=\"selectedEmployee.lastName\"]').type(lastName).get('[ng-model=\"selectedEmployee.startDate\"]').type((0, _helper.randomDate)()).get('[ng-model=\"selectedEmployee.email\"]').type(email).get('.formFooter').click() // assert\n.get('#employee-list').should('contain', \"\".concat(firstName, \" \").concat(lastName));",
               "err": {},
-              "uuid": "3a9cb60f-03a5-444b-aea2-afa345cc2e4b",
-              "parentUUID": "74625f0e-acc9-4c5e-bb68-fee879db4984",
+              "uuid": "2c9cfd54-7aee-4781-9a14-d8b3473d57b1",
+              "parentUUID": "239752cf-7726-4027-9f95-e84a9be007e8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3a9cb60f-03a5-444b-aea2-afa345cc2e4b"
+            "2c9cfd54-7aee-4781-9a14-d8b3473d57b1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7588,
+          "duration": 7782,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +134,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "03927d15-a00b-4540-baf6-cffc995bc230",
+      "uuid": "d1ddb044-c97d-49f4-b77b-6703fe412741",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -143,7 +143,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e8e00a70-80ed-49d7-b74a-482648127258",
+          "uuid": "72c573d9-91f7-4c8e-8fff-1452a4035035",
           "title": "Edit Employee Spec",
           "fullFile": "",
           "file": "",
@@ -154,7 +154,7 @@
               "title": "Edit Employee details and verify new details were Saved",
               "fullTitle": "Edit Employee Spec Edit Employee details and verify new details were Saved",
               "timedOut": null,
-              "duration": 10878,
+              "duration": 12330,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -163,20 +163,20 @@
               "context": null,
               "code": "cy.fixture('createdEmp').then(function (user) {\n  //select Employee\n  cy.get('#employee-list').contains(\"\".concat(user.firstName, \" \").concat(user.lastName)).click(); //click Edit Button\n  cy.get('#bEdit').click(); //clear email field and enter new email id\n  var newEmail = _helper.emp.email;\n  cy.get('[ng-model=\"selectedEmployee.email\"]').clear().type(newEmail); //click update button\n  cy.get('[type=\"submit\"][ng-hide=\"isCreateForm\"]').click(); //verify email was update\n  cy.get('#employee-list').contains(\"\".concat(user.firstName, \" \").concat(user.lastName)).click().get('#bEdit').click().get('[ng-model=\"selectedEmployee.email\"]').should('have.value', newEmail);\n});",
               "err": {},
-              "uuid": "44b0dbec-2428-45d9-9457-4043ee791709",
-              "parentUUID": "e8e00a70-80ed-49d7-b74a-482648127258",
+              "uuid": "0d07d890-01d5-472f-8056-3b69b0fa0345",
+              "parentUUID": "72c573d9-91f7-4c8e-8fff-1452a4035035",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "44b0dbec-2428-45d9-9457-4043ee791709"
+            "0d07d890-01d5-472f-8056-3b69b0fa0345"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10878,
+          "duration": 12330,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -192,7 +192,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "a87d3f25-f3e6-4afd-b2a6-f4dbeca493ff",
+      "uuid": "b39bba5e-e1a0-47fc-baf0-6ede4df2e77a",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -201,7 +201,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4c3fd324-2c4c-4adf-822c-519bdd38a57c",
+          "uuid": "2d74e57a-f1d8-45bd-8450-ca413e98c821",
           "title": "Delete Employee Spec",
           "fullFile": "",
           "file": "",
@@ -212,7 +212,7 @@
               "title": "Delete Employee record and verify Emp does not exist anymore in the system",
               "fullTitle": "Delete Employee Spec Delete Employee record and verify Emp does not exist anymore in the system",
               "timedOut": null,
-              "duration": 7864,
+              "duration": 8534,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -221,20 +221,20 @@
               "context": null,
               "code": "cy.fixture('empToBeDeleted').then(function (user) {\n  //select Employee\n  cy.get('#employee-list').contains(\"\".concat(user.firstName, \" \").concat(user.lastName)).click(); //click Delete Button\n  cy.get('#bDelete').click() // .wait(10000)\n  //confirm employee is not present\n  .get('#employee-list').click({\n    force: true\n  }).should('not.have', \"\".concat(user.firstName, \" \").concat(user.lastName));\n});",
               "err": {},
-              "uuid": "750624f9-e413-42fb-ac26-32bc7cf60535",
-              "parentUUID": "4c3fd324-2c4c-4adf-822c-519bdd38a57c",
+              "uuid": "be9ec497-406e-4a2a-942d-16d0deccd08f",
+              "parentUUID": "2d74e57a-f1d8-45bd-8450-ca413e98c821",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "750624f9-e413-42fb-ac26-32bc7cf60535"
+            "be9ec497-406e-4a2a-942d-16d0deccd08f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7864,
+          "duration": 8534,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
