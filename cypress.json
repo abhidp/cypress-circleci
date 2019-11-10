@@ -3,9 +3,8 @@
   "video": true,
   "trashAssetsBeforeRuns": true,
   "projectId": "kcuq6p",
-  "reporter": "junit",
+  "reporter": "cypress-multi-reporters",
   "reporterOptions": {
-    "mochaFile": "results/my-test-output-[hash].xml",
-    "toConsole": true
+   "configFile": "reporter-config.json"
   }
 }
