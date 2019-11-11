@@ -17,5 +17,9 @@ workflows:
             - store_test_results:
                 path: cypress/results/junit
             - store_artifacts:
-                path: cypress/results/report    
+                path: cypress/results/report
+general:
+  branches:
+    only:
+     - master                
           

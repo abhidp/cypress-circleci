@@ -4,7 +4,7 @@
   "description": "E2E test automation using Cypress",
   "scripts": {
     "cypress": "./node_modules/.bin/cypress open",
-    "delete:reports": "rm -f cypress/results/mocha/* & rm cypress/results/report/* || true",
+    "delete:reports": "rm -f cypress/results/report/* || true",
     "prereport": "npm run delete:reports",
     "mocha": "./node_modules/.bin/cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
     "merge": "./node_modules/.bin/mochawesome-merge --reportDir cypress/results/mocha > cypress/results/report/mochawesome.json",
