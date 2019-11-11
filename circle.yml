@@ -4,10 +4,10 @@ orbs:
 workflows:
   build:
     jobs:
-      # - cypress/install
+      - cypress/install
       - cypress/run:
-          # requires:
-            # - cypress/install
+          requires:
+            - cypress/install
           command: 'npm test' 
           record: true        # record results on Cypress Dashboard
           parallel: true      # split all specs across machines
