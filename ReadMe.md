@@ -44,9 +44,35 @@ https://cafetownsend-angular-rails.herokuapp.com/login
 
   Config for the CI is defined in `circle.yml`.
   It uses Cypress's predefined Orb which makes installing cypress, caching dependencies, parallel execution etc. with minimum effort and maximum efficiency.  
+  
+  > 4 CI machines are set to run tests in Parallel and save around 13 seconds of execution time compared to running all test serially in a single container.
 
-  View the Builds for this repo @ https://circleci.com/gh/abhidp/workflows/cypress-circleci ( **You need to be logged in to your own CircleCI account to view this** )
+  View the Builds for this repo @ https://circleci.com/gh/abhidp/workflows/cypress-circleci ( **You need to be logged in to your own CircleCI account using your GitHub credentials to view this** )
 
+  View the Summary under `Test Summary` tab and Mochawesome Report under `Artifacts` tab of the Job run 
+
+  ![Alt text](misc/testSummaryCi.png?raw=true "Test Summary ")
+
+    ![Alt text](misc/cireport.png?raw=true "Report Artifacts")
+
+
+* Cypress Dashboard
+
+  Cypress Dashboard is integrated with GitHub and CircleCI to record and report every test when new code is pushed. 
+
+  View the Dashboard @ https://dashboard.cypress.io/#/projects/kcuq6p/runs
+
+  ( **You need to be logged in to your own Cypress Dashboard account using your GitHub or Google credentials to view this** )
+
+  ![Alt text](misc/CypressDashboard.png?raw=true "Cypress Dashboard")
+
+
+
+  Please [contact me](mailto:abhi358@gmail.com) in case of any queries
+
+
+
+  
 
 
 
