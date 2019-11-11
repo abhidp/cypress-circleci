@@ -34,7 +34,7 @@ https://cafetownsend-angular-rails.herokuapp.com/login
   
 * View Reports for Local Run :
 
-    [Mochawesome](https://github.com/adamgruber/mochawesome) generates report under `cypress/results/report/mochawesome.html`
+    After a run completion, [Mochawesome](https://github.com/adamgruber/mochawesome) generates report under `cypress/results/report/mochawesome.html`
 
 
 
