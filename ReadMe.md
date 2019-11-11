@@ -69,14 +69,3 @@ https://cafetownsend-angular-rails.herokuapp.com/login
 
 
   Please [contact me](mailto:abhi358@gmail.com) in case of any queries
-
-
-
-  
-
-
-
-  
-
-
-
